@@ -7,7 +7,7 @@ import axios from 'axios'
 const App = () => {
   const categories = ['education','employment','finance']
   const [cats, setCats] = useState({})
-  
+  \
   
   // const card = data.map(item => {
     //   return(

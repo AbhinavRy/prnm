@@ -1,18 +1,31 @@
-.App{
-    padding: 0;
-    overflow: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$primaryClr : #025955;
+$secondaryClr : #00917c;
+
+*{
+    font-family: Roboto, sans-serif;
     margin: 0;
+    padding: 0;
+}
+.App{
+    overflow: hidden;
     width: 100%;
     .navBar{
         height: 10vh;
+        margin-top: 2vh;
         width: 100%;
         display: flex;
         justify-content: space-between;
+        h1{
+            margin: auto 0 auto 6vw;
+        }
         .navList{
             width: 30%;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            margin: auto 0;
     
             li{
                 display: inline;
@@ -24,12 +37,56 @@
         height: 90vh;
         width: 100vw;
         display: flex;
-        .rightContainer{
-            width: 50%;
-            padding: 3vw;
+        flex-direction: column;
+        align-items: center;
+        .textContainer{
+            width: 100%;
+            padding: 6vw;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            .heading{
+                font-size: 3vw;
+                font-weight: 700;
+                color: $primaryClr;
+            }
+            .subHeading{
+                font-size: 2vw;
+                margin-top: 0.3vw;
+                font-weight: 700;
+                color: $secondaryClr;
+            }
+            .desc{
+                color: #393232;
+                font-size: 1.2vw;
+                margin-top: 1vw;
+                width: 80vh;
+                line-height: 1.8vw;
+            }
         }
-        .leftContainer{
-            @extend .rightContainer;
+        .cardsContainer{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 3vw;
+            width: 70%;
+            .cardContainer{
+                width: 100%;
+                text-align: center;
+                margin: 1vw;
+                border-radius: 1vw;
+                border: 1px solid black;
+                padding: 1vw;
+                .schemeContainer{
+                    height: 20vh;
+                    overflow-y: scroll;
+                    
+                    &::-webkit-scrollbar {
+                        width: 0px;
+                        background: transparent;
+                    }
+                }
+            }
         }
     }
 }
