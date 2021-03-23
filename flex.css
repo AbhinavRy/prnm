@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    background-color: #f2f6ff;
+}
+
+#topbar {
+    width: 100%;
+    padding: 12px 80px;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    box-sizing: border-box;
+    top: 0;
+    position: sticky;
+}
+#logo {
+    color: teal;
+    font-weight: 900;
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: -1;
+    padding: 8px 16px;
+
+}
+#left-menu {
+    display: flex;
+    align-items: center;
+}
+#right-menu {
+    display: flex;
+    align-items: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.menu-items {
+    margin: 0;
+    margin-right: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 16px;
+}
+#search-container {
+    width: 320px;
+    position: relative;
+}
+#search-container > input {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    right: 16px;
+    top: 7px;
+    z-index: 10;
+}
+
+main {
+    padding: 4%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.blog-card {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #aaa;
+    cursor: pointer;
+    min-width: 200px;
+}
+.blog-card:hover {
+    box-shadow: 0 5px 10px #aaa;
+}
+.blog-image {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.blog-heading {
+    margin: 0;
+    padding: 16px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    color: rgba(0,0,0,0,9);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
