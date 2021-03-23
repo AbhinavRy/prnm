@@ -1,10 +1,13 @@
-import React from 'react';
+import React,{useState} from 'react';
 import styles from './App.module.scss'
 import axios from 'axios'
 
 
+
 const App = () => {
-  const catgories = ['education', 'employment', 'finance']
+  const categories = ['education','employment','finance']
+  const [cats, setCats] = useState({})
+  
   
   // const card = data.map(item => {
     //   return(
@@ -24,25 +27,6 @@ const App = () => {
       //         </div>
       //   )
       // })
-      const card = catgories.map(element => {
-        <div>
-    
-      <h1>{element}</h1>
-    <div>
-      <p>
-      {
-        axios.get('http://localhost:5000/schemes',{
-          params: {
-            category: element
-          }
-        }).then(res=>{
-          return(res)
-          })
-      }
-      </p>
-    </div>
-    </div>
-  });
   
   return (
     <div className={styles.App}>
@@ -61,7 +45,7 @@ const App = () => {
           <p className={styles.desc}>Join us to never miss any updates. Get updated regularly and know every government schemes, scholarships, job opportunities, notices and many more things you should be aware of.</p>
           
           <div className={styles.cardsContainer}>
-            {card}
+            {cats.element}
           </div>
         </div>
       </div>
