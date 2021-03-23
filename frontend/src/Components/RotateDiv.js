@@ -32,11 +32,11 @@ const RotateDiv = () => {
 
     return (
         <div className={styles.container}>
-            <RotatDiv rot={rotateVal}>
+            <div className={styles.rotateDiv} rot={rotateVal}>
                 <RotateImg  className={styles.rotateImg} rot={rotateVal} src={image1} alt=""/>
                 <RotateImg  className={styles.rotateImg} rot={rotateVal} src={image2} alt=""/>
                 <RotateImg  className={styles.rotateImg} rot={rotateVal} src={image} alt="1"/>
-            </RotatDiv>
+            </div>
             <button onClick={handleRotate}>Right</button>
             <button onClick={handleRotate}>Left</button>
         </div>

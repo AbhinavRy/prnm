@@ -11,9 +11,15 @@
     width: 300px;
     height: 300px;
     border-radius: 100%;
+    transition: transform 0.25s;
+}
+.rotateImg{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transition: transform 0.25s;
 }
 .rotateImg:nth-child(2){
-    // top: 200px;
     left: 200px;
 }
 .rotateImg:nth-child(3){
