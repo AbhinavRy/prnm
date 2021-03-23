@@ -19,8 +19,9 @@ whichpet.addData("employment","employment training employer skill skills employe
 
 router.get("/",
     async (req,res) => {
+        let category = req.query.category;
         try {
-            let schemes = await Schemes.find({});
+            let schemes = await Schemes.find({category:category});
             if(!schemes){
                 return res.status(400).json({msg:'There are no items added by the logged in seller'});
             }
