@@ -17,15 +17,15 @@ request(urlWithId, async(error, response, html) => {
             if(divs_h3 && divs_a){
                 const name = $(divs_h3).text();
                 const link = $(divs_a).attr("href");
-                // console.log(h3_text);
-                // console.log(href);
+                console.log(name);
+                console.log(link);
                 // try {
-                    if(name && link){
-                    scheme = new Schemes({
-                        name:name,
-                        link:link
-                    });
-                    scheme.save();}
+                    // if(name && link){
+                    // scheme = new Schemes({
+                    //     name:name,
+                    //     link:link
+                    // });
+                    // scheme.save();}
                 // } catch (err) {        
                 //     console.error(err.message);
                 // }
