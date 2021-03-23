@@ -1,0 +1,22 @@
+@keyframes rotates{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.container{
+    position: relative;
+}
+.rotateDiv{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+.rotateImg:nth-child(2){
+    // top: 200px;
+    left: 200px;
+}
+.rotateImg:nth-child(3){
+    top: 200px;
+    left: 100px;
+}

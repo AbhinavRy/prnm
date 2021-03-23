@@ -7,8 +7,13 @@ const SchemesSchema = new mongoose.Schema({
     unique: true,
   },
   link: {
-      type: String,
-      required: true
+    type: String,
+    required: true
+  },
+  category: {
+    type: String,
+    default: "No Category",
+    required: true
   }
 });
 

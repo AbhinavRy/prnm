@@ -1,0 +1,35 @@
+.App{
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    .navBar{
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .navList{
+            width: 30%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    
+            li{
+                display: inline;
+                list-style: none;
+            }
+        }
+    }
+    .appBody{
+        height: 90vh;
+        width: 100vw;
+        display: flex;
+        .rightContainer{
+            width: 50%;
+            padding: 3vw;
+        }
+        .leftContainer{
+            @extend .rightContainer;
+        }
+    }
+}
